@@ -20,7 +20,6 @@ data "aws_ami" "ami_info" {
     }
 }
 
-<<<<<<< HEAD
 data "aws_ami" "nexus_ami_info" {
 
     most_recent = true
@@ -41,25 +40,3 @@ data "aws_ami" "nexus_ami_info" {
         values = ["hvm"]
     }
 }
-=======
-# data "aws_ami" "nexus_ami_info" {
-
-#     most_recent = true
-#     owners = ["679593333241"]
-
-#     filter {
-#         name   = "name"
-#         values = ["SolveDevOps-Nexus-Server-Ubuntu20.04-20240511-*"]
-#     }
-
-#     filter {
-#         name   = "root-device-type"
-#         values = ["ebs"]
-#     }
-
-#     filter {
-#         name   = "virtualization-type"
-#         values = ["hvm"]
-#     }
-# }
->>>>>>> 4726f887ff22b2dfb20861f919d3eb239f623c2e
